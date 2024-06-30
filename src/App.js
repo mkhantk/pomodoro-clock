@@ -1,4 +1,6 @@
 // import logo from './logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faRepeat, faCircleChevronUp, faCircleChevronDown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
 import React from 'react';
 
@@ -18,25 +20,25 @@ class App extends React.Component {
             <div className='flex flex-col items-center'>
               <label>Break Length</label>
               <div className='flex gap-2'>
-                <button>up</button>
+                <button><FontAwesomeIcon icon={faCircleChevronUp} /></button>
                 <di>display</di>
-                <button>down</button>
+                <button><FontAwesomeIcon icon={faCircleChevronDown} /></button>
               </div>
             </div>
             <div className='flex flex-col items-center'>
               <label>Session Length</label>
               <div className='flex gap-2'>
-                <button>up</button>
+                <button><FontAwesomeIcon icon={faCircleChevronUp} /></button>
                 <di>display</di>
-                <button>down</button>
+                <button><FontAwesomeIcon icon={faCircleChevronDown} /></button>
               </div>
             </div>
           </div>
           <div id='display' className='w-[300px] h-[150px] ring-black ring-4 rounded'>25:00</div>
           <div id='buttons' className='flex gap-2'>
-            <button><i className="ri-play-circle-line"></i></button>
-            <button>pause</button>
-            <button>reset</button>
+            <button><FontAwesomeIcon icon={faPlay} /></button>
+            <button><FontAwesomeIcon icon={faPause} /></button>
+            <button><FontAwesomeIcon icon={faRepeat} /></button>
           </div>
         </div>
       </div>
