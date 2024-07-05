@@ -157,7 +157,7 @@ function App() {
           <button id='start_stop' onClick={handleClick}><FontAwesomeIcon icon={faPlay} /><FontAwesomeIcon icon={faPause} /></button>
           <button id='reset' onClick={handleClick}><FontAwesomeIcon icon={faRepeat} /></button>
         </div>
-        <audio id='beep' ref={beepRef} src='/vintage-alarm-beep.mp3' />
+        <audio id='beep' ref={beepRef} src='./vintage-alarm-beep.mp3' />
       </div>
     </div>
   )
